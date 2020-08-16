@@ -12,7 +12,7 @@ export const handleSignIn = async ({userAuth, additionalData}) => {
         user_password: userAuth.password,
         phone_id: "IOS",
         phone_type: "IOS",
-        fcm_token: "123"
+        user_id: "1584017623735_Gn-21zqn2"
     })
     .then((data) => {
         return data.data.data;
