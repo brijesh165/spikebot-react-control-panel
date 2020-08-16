@@ -61,6 +61,9 @@ const Header = () => {
                                 <Link to="/" className={classes.link}>Home</Link>
                             </Button>
                             <Button color="inherit">
+                                <Link to="/listDetails" className={classes.link}>Devices</Link>
+                            </Button>
+                            <Button color="inherit">
                                 <Link to="" className={classes.link}><span onClick={() => signOut()}>Logout</span></Link>
                             </Button>
                         </div>

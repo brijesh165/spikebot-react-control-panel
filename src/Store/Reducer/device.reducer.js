@@ -1,12 +1,13 @@
 import deviceTypes from './../Action/device.types';
 
-const initialState = {
+const INITIAL_STATE = {
     deviceList: []
 };
 
-const deviceReducer = (state=initialState, action) => {
+const deviceReducer = (state=INITIAL_STATE, action) => {
     switch(action.types) {
         case deviceTypes.FETCH_DEVICE_START: {
+            console.log(action.payload);
             return {
                 ...state,
                 deviceList: action.payload

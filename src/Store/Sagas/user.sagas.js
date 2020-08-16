@@ -12,9 +12,10 @@ export const handleSignIn = async ({userAuth, additionalData}) => {
         user_password: userAuth.password,
         phone_id: "IOS",
         phone_type: "IOS",
-        user_id: "1584017623735_Gn-21zqn2"
+        fcm_token: "123"
     })
     .then((data) => {
+        console.log(data);
         return data.data.data;
     })
     .catch((error) => {

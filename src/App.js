@@ -7,6 +7,7 @@ import './App.css';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import HomePage from './Pages/HomePage/HomePage';
 import Header from './Components/Header/Header';
+import ListPage from './Pages/ListPage/ListPage';
 
 const App = (props) => {
   const dispatch = useDispatch();
@@ -20,12 +21,17 @@ const App = (props) => {
       <Header />
       <Switch>
         <Route exact path="/" render={() => (
-            <HomePage />
-          )} />
+          <HomePage />
+        )} />
 
         <Route path="/login" render={() => (
           <LoginPage />
-          )} />
+        )} />
+
+        <Route path="/listDetails" render={() => (
+          <ListPage />
+        )} />
+
       </Switch>
     </div>
   );
